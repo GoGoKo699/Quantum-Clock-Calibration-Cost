@@ -6,7 +6,7 @@ A calibrated clock has two distinct uncertainties: fluctuations in its event rec
 
 ## 1. Uncertain reference rate
 
-Let the actual source generator be $`a\mathcal L_0`$. Suppose the calibration reference is Poisson with actual rate $`b\kappa_0`$, while the supplied rate certification is only $`b\in[1-\xi,1+\xi]`$, with $`0\leq\xi<1`$. No other absolute-time standard is accessible.
+Let the actual source generator be $`a\mathcal L_0`$. Suppose the calibration reference is Poisson with actual rate $`b\kappa_0`$, while the supplied rate certification is only $`b\in[1-\xi,1+\xi]`$, with $`0\leq\xi\lt 1`$. No other absolute-time standard is accessible.
 
 In source operational time $`u=at`$, the reference rate is $`b\kappa_0/a`$. Thus the two parameter choices
 
@@ -16,7 +16,7 @@ In source operational time $`u=at`$, the reference rate is $`b\kappa_0/a`$. Thus
 (a_-,b_-)=\bigl(a_0(1-\delta),1-\delta\bigr)
 ```
 
-produce the same calibration experiment when $`0<\delta\leq\xi`$ and both source speeds lie in the source prior. This holds for event-adapted stopping rules: in operational coordinates, the reference intensity and all parameter-independent decision rules coincide.
+produce the same calibration experiment when $`0\lt \delta\leq\xi`$ and both source speeds lie in the source prior. This holds for event-adapted stopping rules: in operational coordinates, the reference intensity and all parameter-independent decision rules coincide.
 
 Pair those choices with the unknown use durations
 
@@ -48,11 +48,11 @@ The result concerns a shared unknown reference scale. Independently resampled ze
 For calibration stopped after $`m`$ reference events, put $`s_0=m/\kappa_0`$. Its actual duration satisfies
 
 ```math
-S\sim\operatorname{Gamma}(m,b\kappa_0),
+S\sim\mathrm{Gamma}(m,b\kappa_0),
 \qquad
 \mathbb ES=\frac{s_0}{b},
 \qquad
-\operatorname{Var}S=\frac{s_0^2}{b^2m}.
+\mathrm{Var}S=\frac{s_0^2}{b^2m}.
 ```
 
 Let the source have constant parameters during calibration, actual current $`j`$, diffusion $`D_N`$, and the finite envelope
@@ -197,7 +197,7 @@ Both start at $`a_0`$ and satisfy the logarithmic drift bound, since $`d\log a_{
 t_1+\frac{\ell t_1^2}{2}=t_0.
 ```
 
-Their operational durations are identical. For $`0<\ell t_0\leq1`$, one has $`t_1\geq2t_0/3`$, and thus
+Their operational durations are identical. For $`0\lt \ell t_0\leq1`$, one has $`t_1\geq2t_0/3`$, and thus
 
 ```math
 t_0-t_1=\frac{\ell t_1^2}{2}
@@ -208,7 +208,7 @@ The identical-data two-point argument gives
 
 ```math
 \inf_{\widehat t}
-\max\{\operatorname{MSE}_{\rm A},\operatorname{MSE}_{\rm B}\}
+\max\{\mathrm{MSE}_{\rm A},\mathrm{MSE}_{\rm B}\}
 \geq\frac{\ell^2t_0^4}{81}.
 ```
 
@@ -243,7 +243,7 @@ A true sign $`s\in\{+1,-1\}`$ contributes $`sZ`$, where $`Z=+1,-1,0`$ with proba
 ```math
 \mathbb E[N_{\rm obs}\mid\text{record}]=cN,
 \qquad
-\operatorname{Var}(N_{\rm obs}\mid\text{record})
+\mathrm{Var}(N_{\rm obs}\mid\text{record})
 =(e-c^2)A.
 ```
 
@@ -252,8 +252,8 @@ Total expectation and variance give exact finite-time identities,
 ```math
 \mathbb EN_{\rm obs}=c\,\mathbb EN,
 \qquad
-\operatorname{Var}N_{\rm obs}
-=c^2\operatorname{Var}N+(e-c^2)\mathbb EA.
+\mathrm{Var}N_{\rm obs}
+=c^2\mathrm{Var}N+(e-c^2)\mathbb EA.
 ```
 
 Hence

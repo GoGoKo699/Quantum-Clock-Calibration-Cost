@@ -19,12 +19,12 @@ The source Hilbert space is a $`d`$-level core and two auxiliary levels $`m,e`$.
 | Release | $`\sqrt g\lvert\psi\rangle\langle e\rvert`$ | $`0`$ |
 | Reverse release | $`\sqrt{zg}\lvert e\rangle\langle\psi\rvert`$ | $`0`$ |
 
-The Hamiltonian preserves the core/$`m`$/$`e`$ sectors. Assume $`0<h\leq1`$, $`0<q_{\min}\leq g`$, $`Q\geq q_{\min}I_C`$, and
+The Hamiltonian preserves the core/$`m`$/$`e`$ sectors. Assume $`0\lt h\leq1`$, $`0\lt q_{\min}\leq g`$, $`Q\geq q_{\min}I_C`$, and
 
 ```math
 \sum_\alpha L_\alpha^\dagger L_\alpha
 =(Q+zgP_\psi)\oplus
-(gh+z\operatorname{Tr}Q)P_m\oplus2gP_e
+(gh+z\mathrm{Tr}Q)P_m\oplus2gP_e
 \leq2gI.
 ```
 
@@ -32,19 +32,19 @@ All hot backtracking and cold reverse events remain in this bound and in the out
 
 ## 2. Inherited asymptotic source performance
 
-For each fixed $`0<\eta<1`$ and all sufficiently large even $`d`$, the pinned source provides
+For each fixed $`0\lt \eta\lt 1`$ and all sufficiently large even $`d`$, the pinned source provides
 
 ```math
 \begin{gathered}
 q_{\min}\geq gd^{-3},\qquad Q\leq gI_C,
-\qquad \min_c\|H_C-cI_C\|<g/4,\\
+\qquad \min_c\Vert H_C-cI_C\Vert \lt g/4,\\
 j_d=\Theta_\eta(g/d),\qquad
 D_{{\rm time},d}:=D_{N,d}/j_d^2
 \leq C_\eta d^{-1+\eta}/g.
 \end{gathered}
 ```
 
-There is no factor of two in $`D_{N,d}=\lim_{t\to\infty}\operatorname{Var}N(t)/t`$. Its derivation retains the joint duration/reverse-count law of complete regeneration blocks. At a finite reverse rate it is not recovered by replacing this law with the waiting-time variance of positive captures.
+There is no factor of two in $`D_{N,d}=\lim_{t\to\infty}\mathrm{Var}N(t)/t`$. Its derivation retains the joint duration/reverse-count law of complete regeneration blocks. At a finite reverse rate it is not recovered by replacing this law with the waiting-time variance of positive captures.
 
 One fixed-bath realization chooses
 
@@ -75,16 +75,16 @@ Set
 ```math
 e^{\tau\mathcal L}
 =\varepsilon\Phi+(1-\varepsilon)\Psi,
-\qquad \Phi(X)=\sigma\operatorname{Tr}X.
+\qquad \Phi(X)=\sigma\mathrm{Tr}X.
 ```
 
 Here is a direct trajectory-instrument proof. Write $`V(t)`$ for the no-physical-jump propagator. Since the complete jump effect is at most $`2gI`$,
 
 ```math
-\|V(t)x\|^2\geq e^{-2gt}\|x\|^2.
+\Vert V(t)x\Vert ^2\geq e^{-2gt}\Vert x\Vert ^2.
 ```
 
-Indeed its derivative is minus the expectation of the total jump effect, bounded below by $`-2g\|V(t)x\|^2`$. The propagator preserves the three source sectors. For an initial core component, a capture at time $`r`$ therefore has effect
+Indeed its derivative is minus the expectation of the total jump effect, bounded below by $`-2g\Vert V(t)x\Vert ^2`$. The propagator preserves the three source sectors. For an initial core component, a capture at time $`r`$ therefore has effect
 $`V_C(r)^\dagger QV_C(r)\geq q_{\min}e^{-2gr}I_C`$.
 
 Fix a first-release time $`s\in[\tau/2,\tau]`$ and retain only these disjoint classes of trajectories before that release:
@@ -106,11 +106,11 @@ e&ge^{-2gs}P_e.
 
 Every entry is at least $`\alpha`$ times its sector projector: use $`s\leq\tau`$, $`q_{\min}\leq g`$ and $`h\leq1`$. Each selected effect is block diagonal, so the combined effect $`E_s`$ obeys $`E_s\geq\alpha I`$ even for initial states with inter-sector coherences.
 
-Each release prepares the same state $`P_\psi`$. Its selected instrument map is consequently $`X\mapsto P_\psi\operatorname{Tr}(E_sX)`$. The difference obtained by replacing $`E_s`$ with $`E_s-\alpha I`$ is completely positive. After release retain the full, trace-preserving source evolution, including all subsequent jumps. It follows that subtracting
+Each release prepares the same state $`P_\psi`$. Its selected instrument map is consequently $`X\mapsto P_\psi\mathrm{Tr}(E_sX)`$. The difference obtained by replacing $`E_s`$ with $`E_s-\alpha I`$ is completely positive. After release retain the full, trace-preserving source evolution, including all subsequent jumps. It follows that subtracting
 
 ```math
 \alpha\int_{\tau/2}^{\tau}
-e^{(\tau-s)\mathcal L}(P_\psi)\,ds\;\operatorname{Tr}(\cdot)
+e^{(\tau-s)\mathcal L}(P_\psi)\,ds\;\mathrm{Tr}(\cdot)
 ```
 
 from $`e^{\tau\mathcal L}`$ leaves a completely positive map. The integral has trace $`\alpha\tau/2=\varepsilon`$. Taking
@@ -127,15 +127,15 @@ and normalizing the residual map proves the claimed decomposition. This establis
 A replacement channel vanishes on trace-zero Hermitian inputs. Trace-norm contraction of quantum channels therefore gives
 
 ```math
-\|e^{\tau\mathcal L}(X)\|_1
-\leq(1-\varepsilon)\|X\|_1,
-\qquad X=X^\dagger,\quad\operatorname{Tr}X=0.
+\Vert e^{\tau\mathcal L}(X)\Vert _1
+\leq(1-\varepsilon)\Vert X\Vert _1,
+\qquad X=X^\dagger,\quad\mathrm{Tr}X=0.
 ```
 
 This proves uniqueness of the stationary state and convergence from every initial state. For the Hermitian induced trace norm,
 
 ```math
-r(t)=\|e^{t\mathcal L}-\mathcal P\|_{{\rm H},1\to1}
+r(t)=\Vert e^{t\mathcal L}-\mathcal P\Vert _{{\rm H},1\to1}
 \leq2(1-\varepsilon)^{\lfloor t/\tau\rfloor}.
 ```
 

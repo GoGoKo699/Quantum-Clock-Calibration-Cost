@@ -6,7 +6,7 @@ An accurate source can reveal its own progress without knowing how fast that pro
 
 ## 1. The calibration experiment
 
-Let $a\in[a_-,a_+]$, where $0<a_-<a_+<\infty$. The source has **operational time** $u=at$. Its accessible experiment, conditional on operational-time histories, is independent of $a$. A concrete example has
+Let $a\in[a_-,a_+]$, where $0\lt a_-\lt a_+\lt \infty$. The source has **operational time** $u=at$. Its accessible experiment, conditional on operational-time histories, is independent of $a$. A concrete example has
 
 ```math
 \mathcal L_a=a\mathcal L_0,
@@ -87,7 +87,7 @@ The compensator identity and $u=a_0t$ under $a_0$ give
 
 Taking expectations yields the asserted expression. One may first stop at a bounded operational horizon and bounded event count. Bounded physical intensity and finite expected $S$ make the stopped compensators and likelihood terms integrable, allowing removal of these cutoffs. Relative entropy cannot increase when inaccessible reference events are discarded or source outputs are generated through parameter-independent channels. This proves the lemma.
 
-For $a_1=a_0(1+h)$, $0<h\le1$,
+For $a_1=a_0(1+h)$, $0\lt h\le1$,
 
 ```math
 \log(1+h)-\frac{h}{1+h}\le\frac{h^2}{2}.
@@ -168,7 +168,7 @@ The theorem is a minimax claim over an uncertainty set. A pointwise positive low
 Take a Poisson reference of known physical rate $\kappa$ and stop at its $m$-th event. Then
 
 ```math
-S\sim\operatorname{Gamma}(m,\kappa),
+S\sim\mathrm{Gamma}(m,\kappa),
 \quad U_{\mathrm{cal}}=aS,
 \quad U_{\mathrm{use}}=at.
 ```
@@ -183,7 +183,7 @@ The oracle knows $U_{\mathrm{cal}}$ and $U_{\mathrm{use}}$, not $S$. For $m>2$ t
 is unbiased and obeys
 
 ```math
-\operatorname{Var}\widehat t_{\mathrm{unb}}
+\mathrm{Var}\widehat t_{\mathrm{unb}}
 =\frac{t^2}{m-2}.
 ```
 
@@ -192,7 +192,7 @@ The biased estimator with $m-2$ in place of $m-1$ has exact mean squared error $
 If the same calibration serves several intervals, the oracle returns $\widehat t_i=F t_i$ with the same random multiplier $F=(m-1)/(\kappa S)$. In particular,
 
 ```math
-\operatorname{Cov}(\widehat t_i-t_i,\widehat t_j-t_j)
+\mathrm{Cov}(\widehat t_i-t_i,\widehat t_j-t_j)
 =\frac{t_it_j}{m-2}.
 ```
 

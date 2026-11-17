@@ -31,19 +31,19 @@ The signed count $`N(u)`$ starts at zero. Unobserved jumps with increment zero r
 Assume the source mixes to one stationary density matrix $`\rho_{\rm ss}`$. Set
 
 ```math
-\mathcal P(X)=\rho_{\rm ss}\operatorname{Tr}X,
+\mathcal P(X)=\rho_{\rm ss}\mathrm{Tr}X,
 \qquad
 \mathcal R(u)=e^{u\mathcal L}-\mathcal P,
 \qquad
-r(u)=\|\mathcal R(u)\|_{{\rm H},1\to1},
+r(u)=\Vert \mathcal R(u)\Vert _{{\rm H},1\to1},
 ```
 
 where the norm is induced trace norm restricted to Hermitian inputs. Assume the finite integrals
 
 ```math
-m_0=\int_0^\infty r(u)\,du<\infty,
+m_0=\int_0^\infty r(u)\,du\lt \infty,
 \qquad
-m_1=\int_0^\infty u\,r(u)\,du<\infty.
+m_1=\int_0^\infty u\,r(u)\,du\lt \infty.
 ```
 
 At each fixed dimension, exponential mixing suffices. These constants need not be uniform in dimension. The [thermal application](thermal_application.md#3-a-completely-positive-minorization) proves explicit bounds rather than presuming a uniform spectral gap.
@@ -51,29 +51,29 @@ At each fixed dimension, exponential mixing suffices. These constants need not b
 For positive $`X`$, the triangle inequality and the complete jump bound give
 
 ```math
-\|\mathcal J_1(X)\|_1
-\leq\sum_\alpha |s_\alpha|\operatorname{Tr}\mathcal J_\alpha(X)
-\leq\Lambda\operatorname{Tr}X.
+\Vert \mathcal J_1(X)\Vert _1
+\leq\sum_\alpha |s_\alpha|\mathrm{Tr}\mathcal J_\alpha(X)
+\leq\Lambda\mathrm{Tr}X.
 ```
 
 Applying this to the positive and negative parts of a Hermitian input proves
-$`\|\mathcal J_1\|_{{\rm H},1\to1}\leq\Lambda`$. The same argument gives the bound for $`\mathcal J_2`$.
+$`\Vert \mathcal J_1\Vert _{{\rm H},1\to1}\leq\Lambda`$. The same argument gives the bound for $`\mathcal J_2`$.
 
 Write
 
 ```math
-j=\operatorname{Tr}\mathcal J_1(\rho_{\rm ss})>0,
+j=\mathrm{Tr}\mathcal J_1(\rho_{\rm ss})>0,
 \qquad
-k=\operatorname{Tr}\mathcal J_2(\rho_{\rm ss}),
+k=\mathrm{Tr}\mathcal J_2(\rho_{\rm ss}),
 \qquad
-C(v)=\operatorname{Tr}\!\left[
+C(v)=\mathrm{Tr}\!\left[
 \mathcal J_1\mathcal R(v)\mathcal J_1(\rho_{\rm ss})\right].
 ```
 
 The actual signed-count diffusion, with no factor of two in its definition, is
 
 ```math
-D_N:=\lim_{u\to\infty}\frac{\operatorname{Var}N(u)}u
+D_N:=\lim_{u\to\infty}\frac{\mathrm{Var}N(u)}u
 =k+2\int_0^\infty C(v)\,dv.
 ```
 
@@ -99,11 +99,11 @@ $`\mathcal L(\chi)=\mathcal L+\sum_\alpha(e^{s_\alpha\chi}-1)\mathcal J_\alpha`$
 ```math
 \begin{aligned}
 \mathbb E_\rho N(u)
-&=\int_0^u\operatorname{Tr}\mathcal J_1e^{s\mathcal L}(\rho)\,ds,\\
+&=\int_0^u\mathrm{Tr}\mathcal J_1e^{s\mathcal L}(\rho)\,ds,\\
 \mathbb E_\rho N(u)^2
-&=\int_0^u\operatorname{Tr}\mathcal J_2e^{s\mathcal L}(\rho)\,ds\\
+&=\int_0^u\mathrm{Tr}\mathcal J_2e^{s\mathcal L}(\rho)\,ds\\
 &\quad+2\int_{\substack{s,v\geq0\\s+v\leq u}}
-\operatorname{Tr}\mathcal J_1e^{v\mathcal L}
+\mathrm{Tr}\mathcal J_1e^{v\mathcal L}
 \mathcal J_1e^{s\mathcal L}(\rho)\,dv\,ds.
 \end{aligned}
 ```
@@ -111,14 +111,14 @@ $`\mathcal L(\chi)=\mathcal L+\sum_\alpha(e^{s_\alpha\chi}-1)\mathcal J_\alpha`$
 Under stationary initialization these imply
 
 ```math
-\operatorname{Var}_{\rm ss}N(u)
+\mathrm{Var}_{\rm ss}N(u)
 =ku+2\int_0^u(u-v)C(v)\,dv.
 ```
 
 Subtracting $`D_Nu`$ leaves
 $`-2\int_0^u vC(v)\,dv-2u\int_u^\infty C(v)\,dv`$, whose absolute value is at most $`2\Lambda^2m_1`$.
 
-For a general initial state put $`f(s)=\operatorname{Tr}\mathcal J_1\mathcal R(s)(\rho)`$. Then
+For a general initial state put $`f(s)=\mathrm{Tr}\mathcal J_1\mathcal R(s)(\rho)`$. Then
 
 ```math
 \mathbb E_\rho N(u)=ju+b(u),
@@ -127,14 +127,14 @@ For a general initial state put $`f(s)=\operatorname{Tr}\mathcal J_1\mathcal R(s
 ```
 
 Expand the second-moment identities using $`e^{v\mathcal L}=\mathcal P+\mathcal R(v)`$. The difference
-$`\mathbb E_\rho[(N(u)-ju)^2]-\operatorname{Var}_{\rm ss}N(u)`$ is exactly
+$`\mathbb E_\rho[(N(u)-ju)^2]-\mathrm{Var}_{\rm ss}N(u)`$ is exactly
 
 ```math
 \begin{aligned}
-&\int_0^u\operatorname{Tr}\mathcal J_2\mathcal R(s)(\rho)\,ds
+&\int_0^u\mathrm{Tr}\mathcal J_2\mathcal R(s)(\rho)\,ds
 -2j\int_0^u s f(s)\,ds\\
 &\quad+2\int_{\substack{s,v\geq0\\s+v\leq u}}
-\operatorname{Tr}\mathcal J_1\mathcal R(v)
+\mathrm{Tr}\mathcal J_1\mathcal R(v)
 \mathcal J_1\mathcal R(s)(\rho)\,dv\,ds.
 \end{aligned}
 ```
@@ -144,7 +144,7 @@ Its three terms have absolute values at most $`\Lambda m_0`$, $`2\Lambda^2m_1`$ 
 ## 3. An uncertain common speed
 
 Let the family be $`\mathcal L_a=a\mathcal L_0`$ for
-$`a\in[a_-,a_+]`$, where $`0<a_-<a_+<\infty`$ are known constants. All physical jump rates, reverse transitions and source resets share this scale. Then
+$`a\in[a_-,a_+]`$, where $`0\lt a_-\lt a_+\lt \infty`$ are known constants. All physical jump rates, reverse transitions and source resets share this scale. Then
 
 ```math
 j_a=aj_0,\qquad D_{N,a}=aD_{N,0},\qquad
@@ -167,9 +167,9 @@ The [model](model.md) specifies which outputs obey this common-speed condition. 
 Use an independent reference whose successive marked events have independent exponential waiting times of known actual rate $`\kappa`$. Stop at its $`m`$th event. The actual calibration duration is not revealed:
 
 ```math
-S\sim\operatorname{Gamma}(m,\kappa),
+S\sim\mathrm{Gamma}(m,\kappa),
 \qquad s:=\mathbb ES=m/\kappa,
-\qquad \operatorname{Var}S=s^2/m.
+\qquad \mathrm{Var}S=s^2/m.
 ```
 
 The reference runs only during calibration. The stochastic fractional uncertainty of its duration is $`1/\sqrt m`$, and it supplies exactly $`m`$ counted events. A finite countdown has $`m+1`$ logical values and can stop the reference autonomously. This is an effective finite-state reference model with explicit event, time and memory costs, not a detector or bath implementation theorem.
@@ -255,7 +255,7 @@ At the independent Gamma calibration stop,
 1-\frac{\overline\Lambda}{\kappa}(e^\chi-1)
 \right]^{-m},
 \qquad
-\overline\Lambda(e^\chi-1)<\kappa.
+\overline\Lambda(e^\chi-1)\lt \kappa.
 ```
 
 Consequently a calibration count capacity $`H_c`$ and use capacity $`H_u`$ have explicit failure bounds
@@ -282,11 +282,11 @@ R_a^{\rm finite}(t)
 
 This argument does not require an overflow flag. It couples the finite and unlimited records and charges the event on which they can disagree. For a guarantee covering all $`K`$ uses simultaneously, replace $`p_c+p_u`$ by $`p_c+\sum_i p_{u,i}`$.
 
-The calibration register needs $`\lceil\log_2(2H_c+1)\rceil`$ bits. A cumulative cyclic use register and its stored starting value need two registers of $`\lceil\log_2(2H_u+1)\rceil`$ bits. Centered modular differences recover each interval increment on its good event even if the cumulative register wrapped before that interval. Previous outputs can be streamed; retaining all $`K`$ outputs requires their additional static memory. The finite reference countdown and routing flags are included separately. Initial pure register states are supplied and charged; no in-run erasure is needed for the stated protocol. Any physical terminal erasure or extra reset mechanism carries its own preparation, dissipation and activity costs. Fixed event-triggered register routing introduces no calibrated time signal.
+The calibration register needs $`\lceil\log_2(2H_c+1)\rceil`$ bits. A cumulative cyclic use register and its stored starting value need two registers of $`\lceil\log_2(2H_u+1)\rceil`$ bits. Centered modular differences recover each interval increment on its good event even if the cumulative register wrapped before that interval. Previous outputs can be streamed; retaining all $`K`$ outputs requires their additional static memory. Refreshing an old offset $`x`$ to the current value $`y`$ can retain its information in a fresh charged output register: the map $`(x,y,0)\mapsto(y,y,y-x)`$ is injective on the initialized subspace, with arithmetic modulo the register size. The finite reference countdown and routing flags are included separately. Initial pure register states are supplied and charged; no in-run erasure is needed for the stated protocol. Any physical terminal erasure or extra reset mechanism carries its own preparation, dissipation and activity costs. Fixed event-triggered register routing introduces no calibrated time signal.
 
 ## 7. Reference certification and detector assumptions
 
-Known actual $`\kappa`$ is an explicit rate-certification assumption. If the declared nominal rate is $`\kappa_0`$ and the actual rate is $`\kappa_0(1+e)`$ with $`|e|\leq\xi<1`$, use $`s_0=m/\kappa_0`$ in the estimator. A three-term squared-sum bound gives the replacement
+Known actual $`\kappa`$ is an explicit rate-certification assumption. If the declared nominal rate is $`\kappa_0`$ and the actual rate is $`\kappa_0(1+e)`$ with $`|e|\leq\xi\lt 1`$, use $`s_0=m/\kappa_0`$ in the estimator. A three-term squared-sum bound gives the replacement
 
 ```math
 \mathbb E(\widehat j-j_a)^2

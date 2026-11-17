@@ -21,7 +21,7 @@ An explicit protocol calibrates the actual signed current against a reference st
 R_{\rm Q}\ \le\ C\frac{T}{G}
 \left[d^{-1+\eta}+\frac1K\right]
 +\text{controlled finite and stability errors},
-\qquad 0<\eta<1,
+\qquad 0\lt \eta\lt 1,
 ```
 
 and hence an attainable gain $`\Omega(\min\{K,d^{1-\eta}\})`$ over every allowed autonomous classical CTMC. This retains all source reset delays and reverse-event correlations.
@@ -53,6 +53,12 @@ Start with the [scientific route](science/README.md) or the [worked interpretati
 | Retained thermal generator, CP minorization and finite onset | [Thermal application](science/thermal_application.md) |
 | Systematic reference error, drift, detector and memory constraints | [Drift and detection](science/drift_and_detection.md) |
 | Inherited ingredients and limits of the literature comparison | [Related work](references/RELATED_WORK.md) and [references](references/REFERENCES.md) |
+
+## Learn the project
+
+The single educational anchor is **Landi, Kewming, Mitchison and Potts, Current Fluctuations in Open Quantum Systems (PRX Quantum 5, 020201, 2024)**. The [source bridge](learning/anchor_bridge.md) uses the published version's equation numbering, translates its signed-current and counting-field conventions, and explains the additional calibration and minimax steps supplied here.
+
+The [30-milestone map](learning/milestones.md) builds from individual events and their correlations to the finite reference obstruction, robust signed-count protocol, thermal finite regime and stability-limited reuse. Its 12 background milestones and 18 narrative milestones express common understanding targets. The [learning overview](learning/README.md) gives routes through the source and project.
 
 ## Reproduce the finite checks
 

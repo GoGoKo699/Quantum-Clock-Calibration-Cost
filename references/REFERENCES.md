@@ -2,6 +2,12 @@
 
 [Relation to previous work](RELATED_WORK.md) · [Scientific overview](../science/README.md)
 
+## L24 — Educational anchor
+
+Gabriel T. Landi, Michael J. Kewming, Mark T. Mitchison and Patrick P. Potts, **Current Fluctuations in Open Quantum Systems: Bridging the Gap Between Quantum Continuous Measurements and Full Counting Statistics**, *PRX Quantum* **5**, 020201 (2024), DOI: [10.1103/PRXQuantum.5.020201](https://doi.org/10.1103/PRXQuantum.5.020201).
+
+[Author-hosted published version](https://www.pas.rochester.edu/~gtlandi/download/prxquantum.5.020201.pdf). The [educational bridge](../learning/anchor_bridge.md) uses the published 2 April 2024 section and equation numbering. This is the single selected educational anchor; primary research references below serve attribution and proof dependencies.
+
 ## NSR24
 
 Nuriya Nurgalieva, Ralph Silva and Renato Renner, **Tomography of clock signals using the simplest possible reference**, arXiv:2406.12973v1 (18 June 2024).
@@ -24,7 +30,7 @@ Kacper Prech, Gabriel T. Landi, Florian Meier, Nuriya Nurgalieva, Patrick P. Pot
 
 [Full text, arXiv:2406.19450v2](https://arxiv.org/html/2406.19450v2) · [Author-hosted published PDF](https://www.pas.rochester.edu/~gtlandi/download/rpls-mp8z.pdf)
 
-Relevant locations: Sections II.1–II.4; Eqs. (16)–(17) and (42); Appendix I. Source for the full untimestamped classical-record benchmark and its information bounds.
+Relevant locations: Section II A–D; Eqs. (16)–(17) and (42); Appendix I. Source for the full untimestamped classical-record benchmark and its information bounds.
 
 ## M24
 
