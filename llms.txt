@@ -1,0 +1,26 @@
+# Quantum Clock Calibration Cost
+
+Question: can an autonomous quantum clock retain useful elapsed-time accuracy when its actual speed must be learned using a finite temporary reference?
+
+Read README.md, then science/model.md. The main result is a universal finite classical-reference calibration floor and a necessary stable-reuse law. It concerns physical elapsed-time risk after the reference is removed.
+
+Authoritative routes:
+- Allowed uncertainty, outputs, resource vector: science/model.md.
+- Universal stopped-record likelihood and biased-minimax converse: science/reference_converse.md.
+- Actual signed-current finite moments and clipped protocol: science/finite_protocol.md.
+- Full untimestamped CTMC benchmark, equivalent calibration and reuse: science/classical_and_reuse.md.
+- Pinned inherited thermal source, CP minorization and conservative finite onset: science/thermal_application.md.
+- Reference bias, drift, detector efficiency and finite-session memory: science/drift_and_detection.md.
+- Story and illustrative coefficient tradeoff: science/worked_example.md.
+- Primary attribution and actual comparison boundaries: references/RELATED_WORK.md and references/REFERENCES.md.
+- Reproduction and limitations: verification/README.md.
+
+Essential distinctions:
+- Universal gain ceiling O(K); achievable thermal gain Omega(min(K,d^(1-eta))); no unrestricted intrinsic quantum optimality.
+- Fixed per-use amortization does not remove shared calibration uncertainty or preserve unlimited cumulative accuracy.
+- Signed reverse-event correlations and source reset delays remain in the actual diffusion.
+- Common unknown accessible speed; independently known unscaled timing dynamics change the model.
+- Complete modeled event activity is distinct from detector amplification, reference rate certification, memory erasure and microscopic implementation.
+- Finite diagnostic success does not establish practical onset, literature priority, or proof certification.
+- Scientific files own proofs; reference accounts identify inherited inputs and incomplete newest full-text comparison.
+
