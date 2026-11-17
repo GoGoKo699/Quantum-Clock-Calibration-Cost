@@ -21,7 +21,7 @@ An explicit protocol calibrates the actual signed current against a reference st
 R_{\rm Q}\ \le\ C\frac{T}{G}
 \left[d^{-1+\eta}+\frac1K\right]
 +\text{controlled finite and stability errors},
-\qquad 0<\eta<1,
+\qquad 0\lt \eta\lt 1,
 ```
 
 and hence an attainable gain $`\Omega(\min\{K,d^{1-\eta}\})`$ over every allowed autonomous classical CTMC. This retains all source reset delays and reverse-event correlations.

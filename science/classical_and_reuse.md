@@ -13,12 +13,12 @@ The initialization and static calibration record may be arbitrary but cannot enc
 **Uniformization lemma.** For a duration $t$, the full untimestamped record is a parameter-independent channel of
 
 ```math
-Z\sim\operatorname{Poisson}(Gt).
+Z\sim\mathrm{Poisson}(Gt).
 ```
 
 **Proof.** Generate opportunity events at rate $G$. In state $x$, use the fixed probabilities $q_{xy}/G$ for physical marked events and use the remaining probability for an unobserved null event. Given $Z$, draw the discrete marked chain for exactly $Z$ opportunities and delete null events. These transition probabilities and the deletion rule do not depend on $t$. The final state can also be revealed. This constructs the asserted channel.
 
-The same construction covers calibration-dependent initial states by conditioning on the calibration record. An arbitrary initial state distribution supplies no task-time information if it is independent of the unknown duration. For several externally delimited uses with retained classical memory, the full joint record is a channel of independent opportunity counts $Z_i\sim\operatorname{Poisson}(Gt_i)$ and parameter-independent randomness. Internal memory makes their processing correlated, not their opportunity rates.
+The same construction covers calibration-dependent initial states by conditioning on the calibration record. An arbitrary initial state distribution supplies no task-time information if it is independent of the unknown duration. For several externally delimited uses with retained classical memory, the full joint record is a channel of independent opportunity counts $Z_i\sim\mathrm{Poisson}(Gt_i)$ and parameter-independent randomness. Internal memory makes their processing correlated, not their opportunity rates.
 
 ## 2. A finite bound for arbitrary biased decoders
 
@@ -44,8 +44,8 @@ Both alternatives lie in the time window. For the two scalar Poisson laws,
 
 ```math
 D_{\mathrm{KL}}
-\bigl(\operatorname{Pois}(G\tau)
-\Vert\operatorname{Pois}(G(\tau+h))\bigr)
+\bigl(\mathrm{Pois}(G\tau)
+\Vert\mathrm{Pois}(G(\tau+h))\bigr)
 =G\left[h-\tau\log(1+h/\tau)\right]
 \le\frac{Gh^2}{2\tau}=\frac1{16}.
 ```
@@ -136,7 +136,7 @@ For a specified quantum family let $\beta_d$ be an upper bound on its known-curr
 
 ```math
 \beta_d\le C_\eta d^{-1+\eta},
-\qquad 0<\eta<1\text{ fixed}.
+\qquad 0\lt \eta\lt 1\text{ fixed}.
 ```
 
 All source reset delays and reverse events are included in this coefficient. Choose source and reference activities as fixed fractions of $G$ and take mean calibration duration $s=\Theta(KT)$. The finite signed-count calibration-and-estimation theorem has the form
@@ -167,7 +167,7 @@ There is no converse here asserting that $\beta_d^{-1}$ limits every quantum sou
 The calibration accuracy is shared by all intervals. With a reference count $m$, the noiseless-source example has
 
 ```math
-\operatorname{Cov}(\widehat t_i-t_i,\widehat t_j-t_j)
+\mathrm{Cov}(\widehat t_i-t_i,\widehat t_j-t_j)
 =\frac{t_it_j}{m-2}.
 ```
 

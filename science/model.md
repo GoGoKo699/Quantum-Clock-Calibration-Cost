@@ -8,7 +8,7 @@ A regular tick train need not be an accurate physical stopwatch when its actual 
 
 Let $`\mathcal L_0`$ be a specified finite-dimensional GKLS generator with marked physical jump maps
 $`\mathcal J_{\alpha,0}(\rho)=L_{\alpha,0}\rho L_{\alpha,0}^{\dagger}`$.
-An unknown constant $`a\in[a_-,a_+]`$, with $`0<a_-<a_+<\infty`$, determines
+An unknown constant $`a\in[a_-,a_+]`$, with $`0\lt a_-\lt a_+\lt \infty`$, determines
 
 ```math
 \mathcal L_a=a\mathcal L_0,\qquad

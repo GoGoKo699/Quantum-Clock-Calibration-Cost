@@ -62,7 +62,7 @@ Each milestone is a reader-independent understanding target. Dependencies identi
 
 **Central question:** Why does the signed-count variance require more than event frequencies?
 
-**Understanding target:** Read $`D_N=\lim_{t\to\infty}\operatorname{Var}N(t)/t`$ as a variance growth rate. A jump can change the probability of later jumps, so time correlations contribute. Positive- and negative-count fluctuations cannot generally be added as independent noises.
+**Understanding target:** Read $`D_N=\lim_{t\to\infty}\mathrm{Var}N(t)/t`$ as a variance growth rate. A jump can change the probability of later jumps, so time correlations contribute. Positive- and negative-count fluctuations cannot generally be added as independent noises.
 
 **Dependencies and story role:** M03–M04. Adds the fluctuation information needed to judge a clock.
 
@@ -110,7 +110,7 @@ Each milestone is a reader-independent understanding target. Dependencies identi
 
 **Central question:** What is known when calibration ends at the reference's m-th event?
 
-**Understanding target:** For a Poisson reference, the event count is fixed while the physical calibration duration is random: $`S\sim\operatorname{Gamma}(m,\kappa)`$. Its mean is $`m/\kappa`$ and its fractional duration standard deviation is $`1/\sqrt m`$. The actual realized duration is not supplied to the decoder.
+**Understanding target:** For a Poisson reference, the event count is fixed while the physical calibration duration is random: $`S\sim\mathrm{Gamma}(m,\kappa)`$. Its mean is $`m/\kappa`$ and its fractional duration standard deviation is $`1/\sqrt m`$. The actual realized duration is not supplied to the decoder.
 
 **Dependencies and story role:** M08. Turns finite reference access into a concrete calibration experiment.
 

@@ -33,8 +33,8 @@ Use $`\mathcal J_\alpha(X)=L_\alpha X L_\alpha^\dagger`$ for a physical jump map
 |---|---|
 | Channel weight $`\nu_k`$ | Signed increment $`s_\alpha`$ |
 | Current superoperator $`\mathcal J`$ in Eq. (69) | $`\mathcal J_1`$ |
-| Mean current $`J`$ | $`j=\operatorname{Tr}\mathcal J_1(\rho_{\rm ss})`$ |
-| White-noise coefficient $`K`$ in Eq. (68) | $`k=\operatorname{Tr}\mathcal J_2(\rho_{\rm ss})`$; project $`K`$ instead counts future uses |
+| Mean current $`J`$ | $`j=\mathrm{Tr}\mathcal J_1(\rho_{\rm ss})`$ |
+| White-noise coefficient $`K`$ in Eq. (68) | $`k=\mathrm{Tr}\mathcal J_2(\rho_{\rm ss})`$; project $`K`$ instead counts future uses |
 | Smooth part of the stationary current covariance | $`C(v)`$ below; the singular zero-lag term is kept separately |
 | Long-time noise $`D`$ | Signed-count diffusion $`D_N`$ |
 | Generalized state $`\rho_\chi`$ with Fourier field | Translate to the real moment-generating field used here before differentiating |
@@ -42,7 +42,7 @@ Use $`\mathcal J_\alpha(X)=L_\alpha X L_\alpha^\dagger`$ for a physical jump map
 The diffusion convention is
 
 ```math
-D_N=\lim_{t\to\infty}\frac{\operatorname{Var}N(t)}t,
+D_N=\lim_{t\to\infty}\frac{\mathrm{Var}N(t)}t,
 \qquad D_{\rm time}=\frac{D_N}{j^2}.
 ```
 
@@ -66,10 +66,10 @@ Suppose a record contains four captures with signs $`+1,-1,+1,+1`$. Its net coun
 
 The map $`\mathcal J_2`$ squares each individual event's mark. A reverse capture therefore contributes positively to it. It is not the product $`\mathcal J_1^2`$, which describes two successive marked actions.
 
-For a mixing source put $`\mathcal P(X)=\rho_{\rm ss}\operatorname{Tr}X`$ and define
+For a mixing source put $`\mathcal P(X)=\rho_{\rm ss}\mathrm{Tr}X`$ and define
 
 ```math
-C(v)=\operatorname{Tr}\!\left[
+C(v)=\mathrm{Tr}\!\left[
 \mathcal J_1(e^{v\mathcal L}-\mathcal P)
 \mathcal J_1(\rho_{\rm ss})\right].
 ```
@@ -91,9 +91,9 @@ Here $`\mathcal L_a=a\mathcal L_0`$ with unknown $`a`$. All allowed source obser
 Calibration supplies that standard temporarily. Stop an independent Poisson reference after $`m`$ events, with declared actual rate $`\kappa`$. Its physical duration is random:
 
 ```math
-S\sim\operatorname{Gamma}(m,\kappa),
+S\sim\mathrm{Gamma}(m,\kappa),
 \qquad s=\mathbb ES=m/\kappa,
-\qquad \operatorname{Var}S=s^2/m.
+\qquad \mathrm{Var}S=s^2/m.
 ```
 
 The decoder knows $`m`$ and the reference specification, not the actual $`S`$. Thus the current average over an exactly known observation time cannot simply be used with $`S=s`$.
