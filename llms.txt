@@ -14,6 +14,9 @@ Authoritative routes:
 - Story and illustrative coefficient tradeoff: science/worked_example.md.
 - Primary attribution and actual comparison boundaries: references/RELATED_WORK.md and references/REFERENCES.md.
 - Reproduction and limitations: verification/README.md.
+- Selected Landi et al. 2024 educational anchor and notation bridge: learning/anchor_bridge.md.
+- Reader-independent local-to-global understanding map: learning/milestones.md (exactly30 milestones).
+- Learning routes by question: learning/README.md.
 
 Essential distinctions:
 - Universal gain ceiling O(K); achievable thermal gain Omega(min(K,d^(1-eta))); no unrestricted intrinsic quantum optimality.

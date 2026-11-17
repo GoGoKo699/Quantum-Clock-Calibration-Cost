@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 2,
+      "source_sha256": "30af2c83678b6f18ef60092d9f42d6e361abc3a9379a553eba8a0716c2e84038",
+      "required_text": [
+        "R",
+        "T",
+        "min",
+        "max",
+        "w",
+        "Bref"
+      ]
+    },
+    {
+      "path": "README.md",
+      "index": 10,
+      "source_sha256": "842ab20e4f9158644e3cd0a0ade1d924c20ac63c18c7fa75fa0124a1919175ba",
+      "required_text": [
+        "RQ",
+        "T",
+        "G",
+        "K",
+        "\u03b7"
+      ]
+    },
+    {
+      "path": "science/finite_protocol.md",
+      "index": 20,
+      "source_sha256": "d7f0f6764a57a688af2d3297e63235245db38b565c5193011684672f35db3fc9",
+      "required_text": [
+        "B0",
+        "\u039b",
+        "m0",
+        "m1"
+      ]
+    },
+    {
+      "path": "science/reference_converse.md",
+      "index": 39,
+      "source_sha256": "cd7bbdf378338d990e812ffddc720f6faf5a804401c95b445cdd199228758c7d",
+      "required_text": [
+        "512",
+        "T",
+        "w",
+        "B"
+      ]
+    },
+    {
+      "path": "science/thermal_application.md",
+      "index": 75,
+      "source_sha256": "8106cde77ece8fa0f2d562bb5a117903576ec5b28f24e89c9f3e79c2db42abfd",
+      "required_text": [
+        "B0,d",
+        "64",
+        "\u03b5"
+      ]
+    }
+  ]
+}

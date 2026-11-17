@@ -1,0 +1,19 @@
+{
+  "source_repository": "GoGoKo699/Guinevere",
+  "source_commit": "4f63125dafba0e0af2432528627b9cbf56d4b08f",
+  "source_directory": "plugins/merlin-arthur-research/skills/merlin-arthur-research/scripts",
+  "files": [
+    {
+      "file": "capture_hosted_math.cjs",
+      "sha256": "aed00ad58dc2b79fc190eb4e68acb17a37660a94a0ab444ee805fa527939e048"
+    },
+    {
+      "file": "probe_hosted_math.cjs",
+      "sha256": "03655752ad8471f7472476039d18096455c3d59f1a5ca2e25eca3ed77051905e"
+    },
+    {
+      "file": "check_rendered_math.py",
+      "sha256": "25abbe03dc7e494907abdbb8bec1a29508cb50d978f3f1cd9618d601ca4cc792"
+    }
+  ]
+}
