@@ -37,7 +37,7 @@ For each fixed $`0\lt \eta\lt 1`$ and all sufficiently large even $`d`$, the pin
 ```math
 \begin{gathered}
 q_{\min}\geq gd^{-3},\qquad Q\leq gI_C,
-\qquad \min_c\|H_C-cI_C\|\lt g/4,\\
+\qquad \min_c\Vert H_C-cI_C\Vert \lt g/4,\\
 j_d=\Theta_\eta(g/d),\qquad
 D_{{\rm time},d}:=D_{N,d}/j_d^2
 \leq C_\eta d^{-1+\eta}/g.
@@ -81,10 +81,10 @@ e^{\tau\mathcal L}
 Here is a direct trajectory-instrument proof. Write $`V(t)`$ for the no-physical-jump propagator. Since the complete jump effect is at most $`2gI`$,
 
 ```math
-\|V(t)x\|^2\geq e^{-2gt}\|x\|^2.
+\Vert V(t)x\Vert ^2\geq e^{-2gt}\Vert x\Vert ^2.
 ```
 
-Indeed its derivative is minus the expectation of the total jump effect, bounded below by $`-2g\|V(t)x\|^2`$. The propagator preserves the three source sectors. For an initial core component, a capture at time $`r`$ therefore has effect
+Indeed its derivative is minus the expectation of the total jump effect, bounded below by $`-2g\Vert V(t)x\Vert ^2`$. The propagator preserves the three source sectors. For an initial core component, a capture at time $`r`$ therefore has effect
 $`V_C(r)^\dagger QV_C(r)\geq q_{\min}e^{-2gr}I_C`$.
 
 Fix a first-release time $`s\in[\tau/2,\tau]`$ and retain only these disjoint classes of trajectories before that release:
@@ -127,15 +127,15 @@ and normalizing the residual map proves the claimed decomposition. This establis
 A replacement channel vanishes on trace-zero Hermitian inputs. Trace-norm contraction of quantum channels therefore gives
 
 ```math
-\|e^{\tau\mathcal L}(X)\|_1
-\leq(1-\varepsilon)\|X\|_1,
+\Vert e^{\tau\mathcal L}(X)\Vert _1
+\leq(1-\varepsilon)\Vert X\Vert _1,
 \qquad X=X^\dagger,\quad\mathrm{Tr}X=0.
 ```
 
 This proves uniqueness of the stationary state and convergence from every initial state. For the Hermitian induced trace norm,
 
 ```math
-r(t)=\|e^{t\mathcal L}-\mathcal P\|_{{\rm H},1\to1}
+r(t)=\Vert e^{t\mathcal L}-\mathcal P\Vert _{{\rm H},1\to1}
 \leq2(1-\varepsilon)^{\lfloor t/\tau\rfloor}.
 ```
 

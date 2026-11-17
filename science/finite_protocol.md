@@ -35,7 +35,7 @@ Assume the source mixes to one stationary density matrix $`\rho_{\rm ss}`$. Set
 \qquad
 \mathcal R(u)=e^{u\mathcal L}-\mathcal P,
 \qquad
-r(u)=\|\mathcal R(u)\|_{{\rm H},1\to1},
+r(u)=\Vert \mathcal R(u)\Vert _{{\rm H},1\to1},
 ```
 
 where the norm is induced trace norm restricted to Hermitian inputs. Assume the finite integrals
@@ -51,13 +51,13 @@ At each fixed dimension, exponential mixing suffices. These constants need not b
 For positive $`X`$, the triangle inequality and the complete jump bound give
 
 ```math
-\|\mathcal J_1(X)\|_1
+\Vert \mathcal J_1(X)\Vert _1
 \leq\sum_\alpha |s_\alpha|\mathrm{Tr}\mathcal J_\alpha(X)
 \leq\Lambda\mathrm{Tr}X.
 ```
 
 Applying this to the positive and negative parts of a Hermitian input proves
-$`\|\mathcal J_1\|_{{\rm H},1\to1}\leq\Lambda`$. The same argument gives the bound for $`\mathcal J_2`$.
+$`\Vert \mathcal J_1\Vert _{{\rm H},1\to1}\leq\Lambda`$. The same argument gives the bound for $`\mathcal J_2`$.
 
 Write
 
