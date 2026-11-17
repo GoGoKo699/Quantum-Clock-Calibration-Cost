@@ -1,0 +1,257 @@
+{
+  "status": "passed",
+  "check_count": 799,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "source_commit": "46b39e2bc0eb0afc88e2593d5b1cba514bb289a4",
+  "input_sha256": {
+    "check_calibration.py": "9486498ffc863fe13a8cb4dd6cba9221fcd35cdedb30f9d7cf8956caae644dfb",
+    "thermal_model.py": "a2217218f9376bb5a80cd4205e50a4f902841553a40d660af404164a0e433851"
+  },
+  "maximum_absolute_errors": {
+    "trace preservation": 4.4318048577874056e-17,
+    "stationary residual": 5.561946577567963e-17,
+    "stationary multiplier": 5.551608979971942e-17,
+    "scale-invariant transient B": 2.220446049250313e-16,
+    "moment imaginary part": 1.9427688624507056e-13,
+    "finite-time normalization": 1.7763568394002505e-14,
+    "Gamma-stop normalization": 6.439293542825908e-15,
+    "stationary Gamma-stop mean": 6.483702463810914e-14,
+    "modulo-register normalization": 9.992007221626409e-16,
+    "oracle inverse-Gamma mean": 1.199040866595169e-14,
+    "oracle inverse-Gamma MSE": 7.979727989493313e-17,
+    "stopped-reference Gamma KL": 3.9968028886505635e-15,
+    "drift-pair operational duration": 8.881784197001252e-16,
+    "replacement-state trace": 3.3323659859197734e-16,
+    "replacement-state Hermiticity": 2.797157557069881e-17,
+    "Choi replacement-channel convention": 0.0,
+    "Choi identity-channel convention": 0.0,
+    "minorization-remainder Hermiticity": 1.1107649934270853e-16,
+    "minorization-remainder trace weight": 2.2212865487231263e-16
+  },
+  "thermal_cases": [
+    {
+      "core_dimension": 2,
+      "g": 1.0,
+      "h": 0.2,
+      "z": 0.02,
+      "nominal_current": 0.07035252445910456,
+      "nominal_count_diffusion": 0.04936900538442118,
+      "complete_activity": 1.9999999999999996,
+      "m0_bound": 67.52964394258485,
+      "m1_bound": 195.25106004300318,
+      "count_transient_bound": 39741.098736671505,
+      "eigenbasis_condition": 3.680389178433569,
+      "scales": [
+        {
+          "a": 0.7,
+          "max_count_mse_over_envelope": 0.00025160107613213695,
+          "max_calibration_mse_over_bound": 3.3979762932059265e-05,
+          "Gamma_quadrature_relative_error": 4.440892098500626e-16
+        },
+        {
+          "a": 1.0,
+          "max_count_mse_over_envelope": 0.00025160107613217273,
+          "max_calibration_mse_over_bound": 4.9928316853509766e-05,
+          "Gamma_quadrature_relative_error": 2.2426505097428162e-14
+        },
+        {
+          "a": 1.4,
+          "max_count_mse_over_envelope": 0.00025160107613213695,
+          "max_calibration_mse_over_bound": 7.312851312329031e-05,
+          "Gamma_quadrature_relative_error": 2.121231803026186e-12
+        }
+      ]
+    },
+    {
+      "core_dimension": 3,
+      "g": 0.7,
+      "h": 0.08,
+      "z": 0.012,
+      "nominal_current": 0.02401052663039703,
+      "nominal_count_diffusion": 0.02059970248883573,
+      "complete_activity": 1.4000000000000004,
+      "m0_bound": 261.4602143974546,
+      "m1_bound": 1058.3249356023368,
+      "count_transient_bound": 276640.17114930955,
+      "eigenbasis_condition": 9.887862633427298,
+      "scales": [
+        {
+          "a": 0.7,
+          "max_count_mse_over_envelope": 1.6055438940911e-05,
+          "max_calibration_mse_over_bound": 3.1793401411628014e-06,
+          "Gamma_quadrature_relative_error": 3.3306690738754696e-16
+        },
+        {
+          "a": 1.0,
+          "max_count_mse_over_envelope": 1.6055438940911116e-05,
+          "max_calibration_mse_over_bound": 4.363592673300168e-06,
+          "Gamma_quadrature_relative_error": 3.3306690738754696e-15
+        },
+        {
+          "a": 1.4,
+          "max_count_mse_over_envelope": 1.6055438940911e-05,
+          "max_calibration_mse_over_bound": 6.008745117457334e-06,
+          "Gamma_quadrature_relative_error": 4.839462164341057e-13
+        }
+      ]
+    }
+  ],
+  "finite_register_joint_checks": [
+    {
+      "a": 0.7,
+      "reference_events": 3,
+      "register_values": 511,
+      "probability_zero_or_negative_calibration": 0.8688866596457637,
+      "raw_estimator_MSE_with_retained_state": 305.7806309230613,
+      "MSE_with_same_marginals_but_discarded_correlation": 304.06882088616356,
+      "transfer_bound": 32773540.24351188,
+      "source_event_overflow_bound": 9.534587843826761e-37,
+      "minimum_conditional_state_eigenvalue": -3.4851599606264784e-17
+    },
+    {
+      "a": 1.4,
+      "reference_events": 3,
+      "register_values": 511,
+      "probability_zero_or_negative_calibration": 0.7028402658127714,
+      "raw_estimator_MSE_with_retained_state": 749.7249102331319,
+      "MSE_with_same_marginals_but_discarded_correlation": 739.0114281124979,
+      "transfer_bound": 32774567.60156174,
+      "source_event_overflow_bound": 3.345731329103869e-19,
+      "minimum_conditional_state_eigenvalue": -2.4124998464646436e-17
+    }
+  ],
+  "reference_and_drift": {
+    "oracle": [
+      {
+        "m": 3,
+        "estimator": "unbiased",
+        "mean_over_t": 0.9999999999999998,
+        "MSE_over_t_squared": 1.0
+      },
+      {
+        "m": 3,
+        "estimator": "biased_MSE_minimizer",
+        "mean_over_t": 0.4999999999999999,
+        "MSE_over_t_squared": 0.5
+      },
+      {
+        "m": 5,
+        "estimator": "unbiased",
+        "mean_over_t": 1.0,
+        "MSE_over_t_squared": 0.3333333333333333
+      },
+      {
+        "m": 5,
+        "estimator": "biased_MSE_minimizer",
+        "mean_over_t": 0.7499999999999998,
+        "MSE_over_t_squared": 0.25
+      },
+      {
+        "m": 20,
+        "estimator": "unbiased",
+        "mean_over_t": 0.9999999999999993,
+        "MSE_over_t_squared": 0.05555555555555552
+      },
+      {
+        "m": 20,
+        "estimator": "biased_MSE_minimizer",
+        "mean_over_t": 0.947368421052631,
+        "MSE_over_t_squared": 0.05263157894736839
+      },
+      {
+        "m": 100,
+        "estimator": "unbiased",
+        "mean_over_t": 1.000000000000012,
+        "MSE_over_t_squared": 0.010204081632653121
+      },
+      {
+        "m": 100,
+        "estimator": "biased_MSE_minimizer",
+        "mean_over_t": 0.9898989898990018,
+        "MSE_over_t_squared": 0.010101010101010182
+      }
+    ],
+    "KL": [
+      {
+        "m": 3,
+        "integrated_KL": 0.5794415416798367,
+        "closed_form_KL": 0.5794415416798359
+      },
+      {
+        "m": 5,
+        "integrated_KL": 0.9657359027997271,
+        "closed_form_KL": 0.9657359027997264
+      },
+      {
+        "m": 20,
+        "integrated_KL": 3.8629436111989017,
+        "closed_form_KL": 3.8629436111989057
+      },
+      {
+        "m": 100,
+        "integrated_KL": 19.314718055994526,
+        "closed_form_KL": 19.31471805599453
+      }
+    ],
+    "drift": [
+      {
+        "ell_t0": 0.001,
+        "t0": 7.0,
+        "t1": 6.996503495631115,
+        "two_point_MSE_floor": 3.0563857004072753e-06,
+        "displayed_lower_bound": 6.049382716049384e-07
+      },
+      {
+        "ell_t0": 0.05,
+        "t0": 7.0,
+        "t1": 6.833238743821216,
+        "two_point_MSE_floor": 0.006952329140581516,
+        "displayed_lower_bound": 0.001512345679012346
+      },
+      {
+        "ell_t0": 0.5,
+        "t0": 7.0,
+        "t1": 5.798989873223331,
+        "two_point_MSE_floor": 0.3606063311550278,
+        "displayed_lower_bound": 0.15123456790123455
+      },
+      {
+        "ell_t0": 1.0,
+        "t0": 7.0,
+        "t1": 5.124355652982142,
+        "two_point_MSE_floor": 0.879510429125012,
+        "displayed_lower_bound": 0.6049382716049382
+      }
+    ]
+  },
+  "minorization_checks": [
+    {
+      "core_dimension": 2,
+      "tau": 1.0,
+      "q_min": 0.15000000000000008,
+      "epsilon": 5.638970134858866e-05,
+      "minimum_sigma_eigenvalue": 0.0015991214897241937,
+      "minimum_remainder_Choi_eigenvalue": 0.0010195678231182494,
+      "quadrature": "32-point Gauss-Legendre"
+    },
+    {
+      "core_dimension": 3,
+      "tau": 1.4285714285714286,
+      "q_min": 0.10500000000000005,
+      "epsilon": 2.2555880539435464e-05,
+      "minimum_sigma_eigenvalue": 0.00011401082746375344,
+      "minimum_remainder_Choi_eigenvalue": 0.0003442469484429632,
+      "quadrature": "32-point Gauss-Legendre"
+    }
+  ],
+  "limitations": [
+    "Floating-point diagnostics, not certified intervals or a proof checker.",
+    "Finite random thermal cores are not the asymptotic quasiideal family.",
+    "Conservative transient bounds do not demonstrate practical onset.",
+    "No microscopic reservoir, detector engineering, or priority claim."
+  ]
+}
